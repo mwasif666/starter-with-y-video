@@ -1,335 +1,1267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Codex</title>
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
 
-    <!-- Font Family -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Codex</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Borna:wght@400;700&display=swap">
+  <!-- Font Family -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Borna:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!-- MOBILE-MENU START -->
-    <section class="youtube-back">
-      <div class="example-marquee">
-        <div id="vbg8" data-vbg-start-at="10" data-vbg-end-at="60"
-          data-vbg="https://youtu.be/eDy9AJ6-iGU?si=tlqElfcmgSuK6-OS"
-          data-vbg-poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
-          data-vbg-play-button="false" data-vbg-mute-button="false"></div>
-      </div>
-      <div class="overlay"></div> <!-- Overlay div -->
-    </section>
-    <div class="mobile-menu">
-      <div class="mobile-close">
-        <a href="index.html">
-          <img src="images/logof.png" alt width="60%" />
-        </a>
-        <a href="javascript:void(0)" id="menu-close"><i
-            class="fa fa-times"></i></a>
-      </div>
-      <div class="mobile-menu-body" id="mobile-menu-body"></div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- MOBILE-MENU START -->
+  <section class="youtube-back">
+    <div class="example-marquee">
+      <div id="vbg8" data-vbg-start-at="10" data-vbg-end-at="60"
+        data-vbg="https://youtu.be/eDy9AJ6-iGU?si=tlqElfcmgSuK6-OS" data-vbg-poster="./images/s&s_thumb.jpg"
+        data-vbg-play-button="false" data-vbg-mute-button="false"></div>
     </div>
+    <div class="overlay"></div> <!-- Overlay div -->
+  </section>
+  <div class="mobile-menu">
+    <div class="mobile-close">
+      <a href="index.html">
+        <img src="images/logof.png" alt width="60%" />
+      </a>
+      <a href="javascript:void(0)" id="menu-close"><i class="fa fa-times"></i></a>
+    </div>
+    <div class="mobile-menu-body" id="mobile-menu-body"></div>
+  </div>
 
-    <!-- MOBILE-MENU END -->
+  <!-- MOBILE-MENU END -->
 
-    <!-- HEADER CSS START -->
-    <header class="header">
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row align-items-center nav-full">
-            <div class="col-lg-3 col-md-12 col-sm-12">
-              <div class="navbar-respon d-flex justify-content-between">
-                <div class="hamburger d-block d-lg-none">
-                  <div class="hamburger-container">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="header-logo">
-                  <a href="index">
-                    <img src="./images/SNS logo.png" alt />
-                  </a>
+  <!-- HEADER CSS START -->
+  <header class="header">
+    <div class="header-bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center nav-full ps-5 ">
+          <div class="col-lg-3 col-md-12 d-flex justify-content-center col-sm-12">
+            <div class="navbar-respon d-flex justify-content-between">
+              <div class="hamburger d-block d-lg-none">
+                <div class="hamburger-container">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-lg-6 col-md-6 col-sm-6 text-center d-none d-lg-block">
-              <div class="bottom-row">
-                <ul class="list-inline navigation-list">
-                  <li class="list-inline-item active">
-                    <a href="./About.html">About</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="./Services.html">Services</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="./Force.html">Force</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="Reviews.html">Reviews</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 text-end col-sm-6 d-none d-lg-block">
-              <div class="bottom-row">
-                <ul class="list-inline navigation-list">
-                  <li class="list-inline-item">
-                    <a href="Reviews.html">Get Quote</a>
-                  </li>
-                </ul>
+              <div class="header-logo">
+                <a href="index">
+                  <img src="./images/SNS logo.png" alt />
+                </a>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 col-sm-12  hcs hhc">
-
+          <div class="col-lg-6 col-md-6 col-sm-6 text-center d-none d-lg-block">
+            <div class="bottom-row">
+              <ul class="list-inline navigation-list">
+                <li class="list-inline-item active">
+                  <a href="./About.html">About</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="./Services.html">Services</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="./Force.html">Force</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="Reviews.html">Reviews</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center col-sm-6 d-none d-lg-block">
+            <div class="bottom-row">
+              <ul class="list-inline navigation-list">
+                <li class="list-inline-item Get_Quote">
+                  <a href="Reviews.html">Get Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <!-- HEADER END -->
-
-    <!-- Footer Start -->
-
-    <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="logo py-5">
-            <img src="./images/footerlogo.png" alt />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <ul>
-              <li><a href="#">About Us </a></li>
-              <li><a href="#">How It Works?</a></li>
-              <li><a href="#">Wellness Journey</a></li>
-              <li><a href="#">For Instructors</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6">
-            <ul>
-              <li><a href="#">Terms Of Use</a></li>
-              <li><a href="#">Privacy Policy </a></li>
-              <li><a href="#">Copyright Policy </a></li>
-              <li><a href="#">Data Deletion Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-5 col-12 pt-4 search_signup">
-            <h5>Stay up to date</h5>
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Your Email Here"
-              aria-label="Search" />
-            <a href="#">Sign Up</a>
-          </div>
-        </div>
-        <div class="row">
-          <h6 class="text-white text-center py-3">
-            © 2023 Codex, LLC. All Rights Reserved
-          </h6>
-        </div>
-        <div class="row">
-          <div class="social-icons-footer d-flex justify-content-center gap-3">
-            <a href="#" class="fa-brands fa-facebook-f"></a>
-            <a href="#" class="fa-brands fa-instagram"></a>
-            <a href="#" class="fa-brands fa-youtube"></a>
-            <a href="#" class="fa-brands fa-telegram"></a>
-            <a href="#" class="fa-brands fa-twitter"></a>
-            <a href="#" class="fa-brands fa-pinterest"></a>
+          <div class="col-md-8 col-sm-12 d-flex align-items-center" style="height: 100vh;">
+            <div class="header-content">
+              <h1>We Provide Peace Of Mind</h1>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    </div>
+  </header>
 
-    <!-- Footer End -->
+  <section class="about-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+          <h5>[About Us]</h5>
+        </div>
+        <div class="col col-lg-10 about-two">
+          <div class="contwnt-about-2 w-75">
+            <p class="content-para">
+              <strong>Established in 2011</strong>, Security & Surveillance has
+              been a <strong> trusted name for 12+ years.</strong>
+              With elite teams, featuring <strong> Ex-Military Soldiers
+              </strong>
+              and Seasoned <strong> SSG Commandos,</strong>
+              who are armed with a <strong> modern arsenal </strong> and
+              <strong>
+                state-of-the-art fleet, </strong> we’re committed
+              to <strong> protecting, securing, serving,</strong> and taking
+              care
+              of you & <strong> everything you care for.</strong>
+            </p>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript"
-      src="jquery.youtube-background.js?v=1.1.2"></script>
-    <script type="text/javascript"
-      src="youtube-background-experimental.js?v=1.1.2"></script>
-    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
-    <script type="text/javascript">
-      jQuery(document).ready(function() {
-        
-        const groupElements = document.querySelectorAll('.js-vbg-group');
+            <div class="btn-learn">
+              <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
 
-        for (let i = 0; i < groupElements.length; i++) {
-          const groupElement = groupElements[i];
-          const elements = groupElement.querySelectorAll('[data-vbg]');
+          </div>
 
-          for (let j = 0; j < elements.length; j++) {
-            elements[j].addEventListener('video-background-state-change', function(event) {
-              const id = event.target.getAttribute('id');
-              console.log(id, event.detail.type, event.detail.currentState);
-            });
+        </div>
+      </div>
+      <div class="row">
+        <div class="line-bordera">
+          <div class="line-yellow-horizontal"></div>
+          <div class="white-line-horizontal"></div>
+        </div>
 
-            elements[j].addEventListener('video-background-ready', function(event) {
-              const id = event.target.getAttribute('id');
-              console.log('ready', id, event.detail.type, event.detail.currentState);
-            });
-          }
+        <div class="col col-lg-2 about-one about-two222 text-end">
+        </div>
+        <div class="col col-lg-10 about-two ">
+          <div class="contwnt-about-2 w-75">
+            <div class="two">
+              <h1>Though Every Layer</h1>
+              <h2>of Security</h2>
+            </div>
+            <div class="two-hover">
+              <h1>Though Every Layer</h1>
+              <h2>of Security</h2>
+            </div>
+          </div>
+        </div>
+        <div class="line-bordera2">
+          <div class="line-yellow-horizontal2"></div>
+          <div class="white-line-horizontal2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services pt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 text-end">
+          <h5>[Services]</h5>
+        </div>
+        <div class="col-lg-10 w-75">
+          <p class="content-para">Our commitment <strong> goes beyond the
+              ordinary;</strong> we pride ourselves on
+            delivering <strong> a complete suite of personal and commercial
+              security solutions:</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/01.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Exectuive
+                  Protection</h3>
+                <p>Ensuring safety & security of
+                  high-profile individuals with
+                  personalized security plans</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/02.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Static
+                  Guarding </h3>
+                <p>Deploying stationary security
+                  personnel to maintain vigilance
+                  and deter threats</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/03.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Event Security
+                  & Management</h3>
+                <p>Coordinating seamless security
+                  solutions for events, ensuring
+                  safety without disruptions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/04.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>VIP Security
+                  & Protocol</h3>
+                <p>Tailored security & protocol services
+                  for high-profile individuals, ensuring
+                  protection both at home & on the mov</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/05.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Home & Property
+                  Protection</h3>
+                <p>Safeguarding residences & estates
+                  with comprehensive security measures
+                  tailored to individual needs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/06.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Commercial &
+                  Business Security</h3>
+                <p>Protecting retail and commercial
+                  establishments from potential threats,
+                  ensuring business continuity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/07.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Institutions &
+                  Campus Security</h3>
+                <p>Securing educational institutions
+                  and campuses to provide a safe
+                  learning environment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/08.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Critical
+                  Infrastructure
+                  Protection</h3>
+                <p>Securing vital facilities & infrastructure
+                  from potential risks and ensuring
+                  uninterrupted operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card ">
+            <div class="card-body">
+              <div class="content-service-1">
+                <img src="./images/09.png" alt>
+              </div>
+              <div class="content-service-1">
+                <h3>Cash in
+                  Transit</h3>
+                <p>Safely transporting cash & valuables
+                  with meticulous security protocols
+                  and advanced logistics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-2 about-three text-end">
+        </div>
+        <div class="col col-lg-10 about-four">
+          <div class="contwnt-about-2 w-100">
+            <h1>With Teams Suited
+              For Every Need</h1>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row myCard">
+        <div class="col col-lg-2 about-three text-end">
+          <h5>[Force]</h5>
+
+        </div>
+        <div class="col col-lg-10 about-four position-relative">
+          <div class="content-about-2 w-75">
+            <p class="content-para">Security & Surveillance has built versatile
+              teams, each equipped and trained
+              to meet a wide range of security needs with precision and
+              expertise.</p>
+            <div class="swiper myCard-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg"
+                    alt></div>
+                <div class="swiper-slide"><img src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg"
+                    alt></div>
+                <div class="swiper-slide"><img src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg"
+                    alt></div>
+              </div>
+
+            </div>
+            <div class="btn-next-prev">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+              <div class="content-of-swiper">
+                <h2>SSG Commandos</h2>
+                <p class="content-para">Elite special forces operatives, highly
+                  skilled
+                  in tactical operations and trained to handle
+                  high-risk situations with precision.</p>
+                <div class="content-expereince d-flex gap-4">
+                  <div class="content-expre-one">
+                    <h5>10+ Yrs. Min.
+                      Experience</h5>
+                  </div>
+                  <div class="content-expre-two">
+                    <!-- <img src="./images/baton.png" alt="">
+                      <img src="./images/pistol.png" alt="">
+                      <img src="./images//rifle.png" alt="">
+                      <img src="./images/SMG.png" alt=""> -->
+                    <img src="./images/weapons.png" alt>
+                  </div>
+
+                </div>
+                <div class="content-best-suite mt-4">
+                  <h2>Best Suited For:</h2>
+                  <div class="content-suite-para">
+                    <span>VIP Security & Protocol</span>
+                    <span>Diplomatic Protection</span>
+                    <span>High-Risk Situations</span>
+                    <span>Special Events Security</span>
+                    <span>Critical Infrastructure Protection</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+        </div>
+        <div class="col col-lg-10 about-two">
+          <div class="contwnt-about-2 w-100">
+            <h1>Backed By Clients
+              From All Scales</h1>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+          <h5>[Clientele]</h5>
+        </div>
+        <div class="col col-lg-10 about-height">
+          <div class="contwnt-about-2 w-75">
+            <p class="content-para">
+              Clients of all sizes have chosen Security & Survelliance for their
+              needs.
+              From small businesses to large corporations, our partnerships
+              speaks for itself.
+            </p>
+          </div>
+          <!-- Swiper -->
+          <div class="slick-wrapper">
+            <div id="slick1">
+              <div class="slide-item">
+                <img src="./images/Clients Logos/1.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/2.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/3.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/4.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/5.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/6.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/7.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/8.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/9.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/10.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/11.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/12.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/13.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/14.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/15.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/16.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/17.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/18.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/19.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/20.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/21.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/22.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/23.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/24.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/25.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/26.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/27.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/28.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/29.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/30.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/31.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/32.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/33.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/34.png" alt>
+              </div>
+              <div class="slide-item">
+                <img src="./images/Clients Logos/35.png" alt>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+        </div>
+        <div class="col col-lg-10 about-two">
+          <div class="contwnt-about-2 w-100">
+            <h1>And Reviewed from
+              All Perspectives</h1>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+          <h5>[Clientele]</h5>
+        </div>
+        <div class="col col-lg-10 about-height">
+          <div class="contwnt-about-2 w-75">
+            <p class="content-para">
+              Clients of all sizes have chosen Security & Survelliance for their
+              needs.
+              From small businesses to large corporations, our partnerships
+              speaks for itself.
+            </p>
+          </div>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" class="position-relative" id="nav-home" role="tabpanel"
+              aria-labelledby="nav-home-tab" tabindex="0">
+
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="image-testimonal">
+                              <img src="./images/video-testimonal.png" alt>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="content-video-testimonal">
+                              <h2>Nothing But Exceptional</h2>
+                              <div class="row">
+                                <div class="col-3">
+                                  <p>Tariq Gul
+                                    Hamaiti</p>
+                                </div>
+                                <div class="col-5">
+                                  <div class="image-small">
+                                    <img src="./images/Clients Logos/35.png" alt>
+                                    <span>Terminal Manager
+                                      ZYCO Oil Terminal</span>
+                                  </div>
+
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                              </div>
+                              <p>Our experience with Security & Surveillance has
+                                been nothing but
+                                exceptional. They have provided us with team of
+                                15 security
+                                personnel including skilled CCTV operators which
+                                are highly
+                                professional and responsive</p>
+                              <p>We value their efforts in enhancing our
+                                security
+                                parameters and for providing us with a great
+                                team possessing
+                                sheer dedication and commitment towards their
+                                duties.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="image-testimonal">
+                              <img src="./images/video-testimonal.png" alt>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="content-video-testimonal">
+                              <h2>Nothing But Exceptional</h2>
+                              <div class="row">
+                                <div class="col-3">
+                                  <p>Tariq Gul
+                                    Hamaiti</p>
+                                </div>
+                                <div class="col-5">
+                                  <div class="image-small">
+                                    <img src="./images/Clients Logos/35.png" alt>
+                                    <span>Terminal Manager
+                                      ZYCO Oil Terminal</span>
+                                  </div>
+
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                              </div>
+                              <p>Our experience with Security & Surveillance has
+                                been nothing but
+                                exceptional. They have provided us with team of
+                                15 security
+                                personnel including skilled CCTV operators which
+                                are highly
+                                professional and responsive</p>
+                              <p>We value their efforts in enhancing our
+                                security
+                                parameters and for providing us with a great
+                                team possessing
+                                sheer dedication and commitment towards their
+                                duties.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="image-testimonal">
+                              <img src="./images/video-testimonal.png" alt>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="content-video-testimonal">
+                              <h2>Nothing But Exceptional</h2>
+                              <div class="row">
+                                <div class="col-3">
+                                  <p>Tariq Gul
+                                    Hamaiti</p>
+                                </div>
+                                <div class="col-5">
+                                  <div class="image-small">
+                                    <img src="./images/Clients Logos/35.png" alt>
+                                    <span>Terminal Manager
+                                      ZYCO Oil Terminal</span>
+                                  </div>
+
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                              </div>
+                              <p>Our experience with Security & Surveillance has
+                                been nothing but
+                                exceptional. They have provided us with team of
+                                15 security
+                                personnel including skilled CCTV operators which
+                                are highly
+                                professional and responsive</p>
+                              <p>We value their efforts in enhancing our
+                                security
+                                parameters and for providing us with a great
+                                team possessing
+                                sheer dedication and commitment towards their
+                                duties.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="image-testimonal">
+                              <img src="./images/video-testimonal.png" alt>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="content-video-testimonal">
+                              <h2>Nothing But Exceptional</h2>
+                              <div class="row">
+                                <div class="col-3">
+                                  <p>Tariq Gul
+                                    Hamaiti</p>
+                                </div>
+                                <div class="col-5">
+                                  <div class="image-small">
+                                    <img src="./images/Clients Logos/35.png" alt>
+                                    <span>Terminal Manager
+                                      ZYCO Oil Terminal</span>
+                                  </div>
+
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                              </div>
+                              <p>Our experience with Security & Surveillance has
+                                been nothing but
+                                exceptional. They have provided us with team of
+                                15 security
+                                personnel including skilled CCTV operators which
+                                are highly
+                                professional and responsive</p>
+                              <p>We value their efforts in enhancing our
+                                security
+                                parameters and for providing us with a great
+                                team possessing
+                                sheer dedication and commitment towards their
+                                duties.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="image-testimonal">
+                              <img src="./images/video-testimonal.png" alt>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="content-video-testimonal">
+                              <h2>Nothing But Exceptional</h2>
+                              <div class="row">
+                                <div class="col-3">
+                                  <p>Tariq Gul
+                                    Hamaiti</p>
+                                </div>
+                                <div class="col-5">
+                                  <div class="image-small">
+                                    <img src="./images/Clients Logos/35.png" alt>
+                                    <span>Terminal Manager
+                                      ZYCO Oil Terminal</span>
+                                  </div>
+
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                              </div>
+                              <p>Our experience with Security & Surveillance has
+                                been nothing but
+                                exceptional. They have provided us with team of
+                                15 security
+                                personnel including skilled CCTV operators which
+                                are highly
+                                professional and responsive</p>
+                              <p>We value their efforts in enhancing our
+                                security
+                                parameters and for providing us with a great
+                                team possessing
+                                sheer dedication and commitment towards their
+                                duties.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="btn-next-prev2">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              ...</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              ...</div>
+          </div>
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">Videos
+                & Transcript</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Transcript
+                Only</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Videos
+                Only</button>
+            </div>
+
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="requested">
+    <div class="container">
+      <div class="row">
+        <h1>Request a Quote
+          or Free Consultation</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="Form">
+    <div class="container">
+      <div class="row">
+        <p class="content-para">
+          Fill out the form below to request a personalized quote for your
+          security needs,
+          or let our team of experts evaluate your requirements & provide a free
+          recommendation.
+        </p>
+      </div>
+      <div class="row">
+        <div class="content-form text-center">
+          <h1>Send us a message!</h1>
+          <p>YOUR SECURITY IS OUR PRIORITY</p>
+        </div>
+        <div class="form-full d-flex justify-content-center">
+          <form class=" row g-3 w-75 needs-validation mt-4" novalidate>
+            <div class="col-md-6 position-relative">
+              <input type="text" class="form-control" id="validationTooltip01" placeholder="Name" required>
+              <div class="invalid-tooltip">
+                Please Enter Your Name.
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <input type="email" class="form-control" id="validationTooltip02" placeholder="Email" required>
+              <div class="invalid-tooltip">
+                Please Enter Your Email.
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <input type="number" class="form-control" id="validationTooltipUsername" placeholder="Phone Number"
+                aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Please Enter Your Phone Number.
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <input type="text" class="form-control" id="validationTooltip03" placeholder="Subject" required>
+              <div class="invalid-tooltip">
+                Please Enter Subject.
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"
+                required></textarea>
+              <div class="invalid-tooltip">
+                Please Type Your Message.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about-page about-page-end">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+        </div>
+        <div class="col col-lg-10 about-two">
+          <div class="contwnt-about-2 w-75">
+            <h1>Ready to Secure
+              Your Peace of Mind?</h1>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-2 about-one text-end">
+          <h5>[Contact]</h5>
+        </div>
+        <div class="col col-lg-3 about-two">
+          <div class="contwnt-about-2 w-75">
+            <div class="content-1">
+              <h2>Book A Call</h2>
+              <p>+92 213 530 4458</p>
+              <p> +92 345 8201 255 </p>
+            </div>
+            <div class="content-2">
+              <p>Tap to Open in Whatsapp</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 about-two">
+          <div class="contwnt-about-2 w-75">
+            <div class="content-1">
+              <h2>Email Us</h2>
+              <p>info@secure-surve.com</p>
+              <p>Secure-Surve.com</p>
+            </div>
+            <div class="content-2">
+              <p>Tap to Open in Gmail</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 about-two">
+          <div class="contwnt-about-2 w-75">
+            <div class="content-1">
+              <h2>Or Come Meet Us
+              </h2>
+              <p>4-A Kehkashan Town Houses</p>
+              <p>Block-5, Clifton Karachi.</p>
+            </div>
+            <div class="content-2">
+              <p>Tap to Open in Maps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HEADER END -->
+
+  <!-- Footer Start -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-logo">
+            <img src="./images/SNS logo.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <p>© 2011 - 2024</p>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <p>[In] [IG] [Fb] [Yt] [Tw]</p>
+        </div>
+        <div class="col-md-3 text-end">
+          <div class="arrow-up-footer">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer End -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="jquery.youtube-background.js?v=1.1.2"></script>
+  <script type="text/javascript" src="youtube-background-experimental.js?v=1.1.2"></script>
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  let tl =gsap.timeline({
+  scrollTrigger:{
+    trigger:".about-two222",
+    start:"0% 80%",
+    end:"100% 0%",
+    markers:false,
+    scrub:1,
+  },
+});
+tl.to(".two-hover h1",{
+  width:"100%",
+})
+tl.to(".two-hover h2",{
+  width:"100%",
+})
+</script>
+ <script>
+  let tl2 =gsap.timeline({
+  scrollTrigger:{
+    trigger:".line-bordera",
+    start:"0% 80%",
+    end:"100% 0%",
+    markers:false,
+    scrub:1,
+  },
+});
+tl2.to(".white-line-horizontal",{
+  width:"100%",
+})
+  </script>
+ <script>
+  let tl3 =gsap.timeline({
+  scrollTrigger:{
+    trigger:".line-bordera2",
+    start:"0% 80%",
+    end:"100% 0%",
+    markers:false,
+    scrub:1,
+  },
+});
+tl3.to(".white-line-horizontal2",{
+  width:"100%",
+})
+  </script>
+
+
+  <script>
+    $('#slick1').slick({
+      rows: 3,
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      loop: true
+    });
+
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+
+      const groupElements = document.querySelectorAll('.js-vbg-group');
+
+      for (let i = 0; i < groupElements.length; i++) {
+        const groupElement = groupElements[i];
+        const elements = groupElement.querySelectorAll('[data-vbg]');
+
+        for (let j = 0; j < elements.length; j++) {
+          elements[j].addEventListener('video-background-state-change', function (event) {
+            const id = event.target.getAttribute('id');
+            console.log(id, event.detail.type, event.detail.currentState);
+          });
+
+          elements[j].addEventListener('video-background-ready', function (event) {
+            const id = event.target.getAttribute('id');
+            console.log('ready', id, event.detail.type, event.detail.currentState);
+          });
         }
+      }
 
-        jQuery('[data-vbg]').youtube_background();
+      jQuery('[data-vbg]').youtube_background();
 
-        const groups = new VideoBackgroundGroups(groupElements);
+      const groups = new VideoBackgroundGroups(groupElements);
 
-        for (const i in groups.instances) {
-          const group = groups.instances[i].element;
-          const vbgroup = groups.instances[i];
-          const groupPlay = group.querySelector('.group-play');
-          const groupPause = group.querySelector('.group-pause');
-          const groupMute = group.querySelector('.group-mute');
-          const groupUnmute = group.querySelector('.group-unmute');
+      for (const i in groups.instances) {
+        const group = groups.instances[i].element;
+        const vbgroup = groups.instances[i];
+        const groupPlay = group.querySelector('.group-play');
+        const groupPause = group.querySelector('.group-pause');
+        const groupMute = group.querySelector('.group-mute');
+        const groupUnmute = group.querySelector('.group-unmute');
 
-      
-          groupPlay.addEventListener('click', function() {
-            vbgroup.play();
-          })
 
-          groupMute.addEventListener('click', function() {
-            vbgroup.mute();
-          })
+        groupPlay.addEventListener('click', function () {
+          vbgroup.play();
+        })
 
-          groupUnmute.addEventListener('click', function() {
-            vbgroup.unmute();
-          })
+        groupMute.addEventListener('click', function () {
+          vbgroup.mute();
+        })
 
-          groupFullscreen.addEventListener('click', function() {
-            console.log(vbgroup.currentElement.closest('.js-vbg-group'));
-            vbgroup.currentElement.closest('.js-vbg-group').webkitRequestFullscreen();
-          })
+        groupUnmute.addEventListener('click', function () {
+          vbgroup.unmute();
+        })
+
+        groupFullscreen.addEventListener('click', function () {
+          console.log(vbgroup.currentElement.closest('.js-vbg-group'));
+          vbgroup.currentElement.closest('.js-vbg-group').webkitRequestFullscreen();
+        })
+      }
+    });
+
+    const vbgs = document.querySelectorAll('[data-vbg]');
+
+
+    const srcChangeButtons = document.querySelectorAll('.src-change-button');
+
+    for (let i = 0; i < srcChangeButtons.length; i++) {
+      srcChangeButtons[i].addEventListener('click', function (event) {
+        const target = event.target;
+        const src = target.getAttribute('data-src');
+        const vbgElem = target.closest('.example-marquee').querySelector('[data-vbg]');
+        if (!vbgElem) return;
+        const uid = vbgElem.getAttribute('data-vbg-uid');
+        if (!uid) return;
+
+        window.VIDEO_BACKGROUNDS.index[uid].setSource(src);
+      })
+    }
+
+    const destroyBtns = document.querySelectorAll('.vbg-destroy');
+    for (let i = 0; i < destroyBtns.length; i++) {
+      destroyBtns[i].addEventListener('click', function (event) {
+        const target = event.target;
+        const selector = target.getAttribute('data-selector');
+        const vbgElem = document.querySelector(selector);
+        window.VIDEO_BACKGROUNDS.destroy(vbgElem);
+      })
+    }
+
+    const initBtns = document.querySelectorAll('.vbg-initialize');
+    for (let i = 0; i < initBtns.length; i++) {
+      initBtns[i].addEventListener('click', function (event) {
+        const target = event.target;
+        const selector = target.getAttribute('data-selector');
+        const src = target.getAttribute('data-src');
+        const vbgElem = document.querySelector(selector);
+
+        if (!vbgElem) return;
+        if (vbgElem.getAttribute('data-vbg-uid')) window.VIDEO_BACKGROUNDS.destroy(vbgElem);
+
+        if (src) {
+          vbgElem.setAttribute('data-vbg', src);
         }
-      });
+        window.VIDEO_BACKGROUNDS.add(vbgElem);
+      })
+    }
 
-      const vbgs = document.querySelectorAll('[data-vbg]');
+    const seekInputs = document.querySelectorAll('.seek-bar-wrapper');
+    for (let i = 0; i < seekInputs.length; i++) {
+      new SeekBar(seekInputs[i]);
+    }
 
+    const playToggle = document.querySelectorAll('.toggle-play-button');
+    for (let i = 0; i < playToggle.length; i++) {
+      new PlayToggle(playToggle[i]);
+    }
 
-      const srcChangeButtons = document.querySelectorAll('.src-change-button');
+    const muteToggle = document.querySelectorAll('.toggle-mute-button');
+    for (let i = 0; i < muteToggle.length; i++) {
+      new MuteToggle(muteToggle[i]);
+    }
+  </script>
+  <script>
+    var swiper = new Swiper(".myCard-1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
-      for (let i = 0; i < srcChangeButtons.length; i++) {
-        srcChangeButtons[i].addEventListener('click', function(event) {
-          const target = event.target;
-          const src = target.getAttribute('data-src');
-          const vbgElem = target.closest('.example-marquee').querySelector('[data-vbg]');
-          if (!vbgElem) return;
-          const uid = vbgElem.getAttribute('data-vbg-uid');
-          if (!uid) return;
+  <script src="App.js"></script>
+</body>
 
-          window.VIDEO_BACKGROUNDS.index[uid].setSource(src);
-        })
-      }
-
-      const destroyBtns = document.querySelectorAll('.vbg-destroy');
-      for (let i = 0; i < destroyBtns.length; i++) {
-        destroyBtns[i].addEventListener('click', function(event) {
-          const target = event.target;
-          const selector = target.getAttribute('data-selector');
-          const vbgElem = document.querySelector(selector);
-          window.VIDEO_BACKGROUNDS.destroy(vbgElem);
-        })
-      }
-
-      const initBtns = document.querySelectorAll('.vbg-initialize');
-      for (let i = 0; i < initBtns.length; i++) {
-        initBtns[i].addEventListener('click', function(event) {
-          const target = event.target;
-          const selector = target.getAttribute('data-selector');
-          const src = target.getAttribute('data-src');
-          const vbgElem = document.querySelector(selector);
-
-          if (!vbgElem) return;
-          if (vbgElem.getAttribute('data-vbg-uid')) window.VIDEO_BACKGROUNDS.destroy(vbgElem);
-
-          if (src) {
-            vbgElem.setAttribute('data-vbg', src);
-          }
-          window.VIDEO_BACKGROUNDS.add(vbgElem);
-        })
-      }
-
-      const seekInputs = document.querySelectorAll('.seek-bar-wrapper');
-      for (let i = 0; i < seekInputs.length; i++) {
-        new SeekBar(seekInputs[i]);
-      }
-
-      const playToggle = document.querySelectorAll('.toggle-play-button');
-      for (let i = 0; i < playToggle.length; i++) {
-        new PlayToggle(playToggle[i]);
-      }
-
-      const muteToggle = document.querySelectorAll('.toggle-mute-button');
-      for (let i = 0; i < muteToggle.length; i++) {
-        new MuteToggle(muteToggle[i]);
-      }
-    </script>
-    <!-- <script>
-      var swiper = new Swiper(".myCard-1", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          1400: {
-            slidesPerView: 3, // For large screens (lg), display 3 slides
-          },
-          992: {
-            slidesPerView: 2, // For medium-sized screens (md), display 2 slides
-          },
-          300: {
-            slidesPerView: 1, // For small screens, display 1 slide
-          },
-        },
-      });
-    </script> -->
-
-    <script src="App.js"></script>
-  </body>
 </html>
